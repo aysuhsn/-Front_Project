@@ -494,3 +494,33 @@
     color: white;
 }
 
+/* SECURE */
+#system .methods{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 8rem;
+}
+#system .methods .secure{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 35rem;
+    height: 20rem;
+}
+.secure i{
+    color: #282828;
+    font-size: 4.5rem;
+    width: 4rem;
+    height: 2rem;
+}
+.secure h6{
+    color: #282828;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.secure p{
+    color: #506172;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
