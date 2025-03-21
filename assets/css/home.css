@@ -522,6 +522,7 @@
 .secure p{
     color: #506172;
     width: 20rem;
+    line-height: 1.8;
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -531,4 +532,42 @@
     display: flex;
     margin-left: 5rem;
     margin-top: 13rem;
+}
+
+/* ESTORE */
+#estore .support{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15rem;
+    font-family: 'Poppins', sans-serif;
+}
+.support .link{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.support .link img{
+    width: 10.2rem;
+    height: 2.3rem;
+}
+.link p{
+    font-size: 1.6rem;
+    width: 20rem;
+    line-height: 1.8;
+    color: rgb(134, 140, 152);
+}
+.link h4{
+    font-size: 2rem;
+}
+.link ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.link li a{
+    font-size: 1.6rem;
+    color: rgb(134, 140, 152);
+}
+.link li a:hover{
+    color: rgb(34, 34, 248);
 }
