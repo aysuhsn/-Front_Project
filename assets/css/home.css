@@ -533,8 +533,13 @@
     margin-left: 5rem;
     margin-top: 13rem;
 }
+/* Main finish */
 
-/* ESTORE */
+/*FOOTER TOP */
+#estore .footer{
+    display: flex;
+    flex-direction: column;
+}
 #estore .support{
     display: flex;
     justify-content: space-around;
@@ -570,4 +575,30 @@
 }
 .link li a:hover{
     color: rgb(34, 34, 248);
+}
+/* FOOTER BOTTOM */
+.end{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35rem;
+    padding-top: 7rem;
+}
+.end .left{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(134, 140, 152);
+}
+.end .left p i{
+    color: #0000EE;
+}
+.end .right{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: #222222;
+    cursor: pointer;
+}
+.end .right i:hover{
+    color: #0000EE;
 }
