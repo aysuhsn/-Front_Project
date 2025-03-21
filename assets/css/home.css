@@ -441,4 +441,56 @@
     color: white;
 }
 
+/* Get Our Latest Offers News */
+
+#news{
+    margin: 12rem 5rem;
+}
+#news .subscribes{
+    margin: 12rem 5rem;
+    display: flex;
+    background-image: url("https://preview.colorlib.com/theme/estore/assets/img/collection/latest-offer.png.webp");
+    max-width: 120rem;
+    height: 40rem; 
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+#news .subscribes .subscribes-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+#news .subscribes .subscribes-content h2{
+    font-size: 4rem;
+    width: 40rem;
+    font-family: "Playfair Display", serif;
+}
+#news .subscribes .subscribes-content p{
+    color: #373B41;
+    font-size: 2rem;
+}
+#news .subscribes .subscribes-email input{
+    border-radius: 3rem;
+    border: none;
+    height: 5rem;
+    padding: 1rem;
+    width: 100%;
+}
+#news .subscribes .subscribes-email{
+    position: relative;
+    width: 40rem;
+}
+#news .subscribes .subscribes-email .btn{
+    border-radius: 3rem;
+    width: 15rem;
+    text-align: center;
+    padding: 1rem;
+    display: inline-block;
+    height: 5rem;
+    position: absolute;
+    right: 0;
+    background-color: #2577FD;
+    color: white;
+}
 
