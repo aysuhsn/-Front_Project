@@ -334,6 +334,44 @@
     text-decoration: line-through;
 }
 
+/* Find The Best Product From Our Shop */
+#home .find{
+    display: flex;
+    align-items: center;
+    margin: 20rem 5rem;
+    padding: 0 15rem;
+    height: 60rem;
+    gap: 10rem;
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/categori/card.png.webp);
+}
+.photo{
+    align-self: flex-end;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.home-content h2{
+    font-family: "Playfair Display", serif;
+    font-size: 5.5rem;
+}
+.home-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+.home-content .btn{
+    border: 1px solid black;
+    background-color: black;
+    width: 15rem;
+    height: 4rem;
+    border: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
