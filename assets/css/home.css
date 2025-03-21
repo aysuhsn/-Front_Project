@@ -1,0 +1,142 @@
+/* Header Start */
+#nav-area{
+    height: 9rem;
+    /* max-width: 1530px; */
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    position: fixed;
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.latest{
+    position: relative;
+    display: flex;
+}
+.hot{
+    position: absolute;
+    top: -17px;
+    right: -20px;
+    background: #FF003C;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.nav-list ul li:hover{
+    color: #FF003C;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+
+.search{
+    position: relative;
+    display: flex;
+}
+.search input{
+    width: 15rem;
+    padding: 1rem;
+    padding-right: 3.5rem;
+    border: 1px solid #494545;
+    border-radius: 2rem;
+}
+.search i{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    color: gray;
+    cursor: pointer;
+}
+
+.favory,
+.shop{
+    display: flex;
+    position: relative;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(189, 185, 185);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #00B1FF;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #00B1FF;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    top: -5px;
+    right: -10px;
+}
+
+.btn{
+    width: 9rem;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #2577FD;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00B1FF;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+.burger button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* Header Finish */
+
