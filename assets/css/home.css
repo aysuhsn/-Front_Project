@@ -521,6 +521,14 @@
 }
 .secure p{
     color: #506172;
+    width: 20rem;
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+}
+/* PHOTOS */
+#photos .images{
+    width: 100%;
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 13rem;
 }
