@@ -136,7 +136,57 @@
     font-weight: bold;
     font-size: 1.5rem;
 }
-
-
 /* Header Finish */
+
+/* Main Start */
+/* Winter Collection */
+#main-area{
+    height: 70rem;
+    /* max-width: 1530px; */
+}
+
+.main{
+    height: 100%;
+    /* max-width: 100%; */
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/hero/h1_hero.jpg);
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.main img{
+    height: 70rem;
+}
+
+.main-text{
+    /* width: 40rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.main-text span{
+    font-size: 4rem;
+    font-family: "Yellowtail", cursive;
+    color: #2577FD;
+}
+.main-text h1{
+    font-size: 10rem;
+    color: #1F2022;
+    font-family: "Playfair Display", serif;
+
+}
+.main-text p{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: #1F2022;
+}
+.main-text button{
+    width: 15.5rem;
+    height: 5rem;
+    border-radius: 3rem;
+}
+
 
