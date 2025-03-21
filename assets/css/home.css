@@ -189,4 +189,74 @@
     border-radius: 3rem;
 }
 
+ /* Shop By Category */
+ #category-area{
+    height: 76rem;
+}
+#category-area .container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 20rem 4.5rem;
+}
+.hero-content{
+    font-size: 2.8rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.hero-img .image{
+    width: 40rem;
+    height: 25rem;
+    position: relative;
+}
+.image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.image-content{
+    position: absolute;
+    width: 17rem;
+    bottom: 9rem;
+    left: 22rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.image-content h3{
+    font-size: 2.6rem;
+    font-family: "Playfair Display", serif;
+}
+.image-content .best{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid#FFCE25;
+    background-color: #FFCE25;
+    height: 4rem;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+.best a{
+    color: black;
+}
+.image-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+.image .collection{
+    font-family: "Yellowtail", cursive;
+    font-size: 2.3rem;
+    color: #0071FE;
+    font-weight: bold;
+    text-shadow: 0 -3px 0 #fff;
+}
+
+
 
