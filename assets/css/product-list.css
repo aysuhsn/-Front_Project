@@ -470,3 +470,60 @@
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
 }
+
+/* FOURTH */
+#fourth {
+    height: 55rem;
+    background-color: #191d34;
+    color: white;
+  }
+  
+  .subscribe {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9rem;
+    margin-bottom: 8px;
+  }
+  
+  .subscribe h1 {
+    font-size: 3.2rem;
+  }
+  
+  .subscribe p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 70rem;
+  }
+  
+  .subscribe .subscribe-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .subscribe .subscribe-input input {
+    background-color: transparent;
+    width: 50rem;
+    padding: 2rem 5rem;
+    border: 1px solid white;
+    border-radius: 5rem;
+  }
+  
+  .subscribe .subscribe-input ::placeholder {
+    color: rgba(255, 255, 255, 0.793);
+  }
+  
+  .subscribe .subscribe-input button {
+    padding: 1.5rem 3rem;
+    background-color: #2577fd;
+    color: white;
+    border: 1px solid #2577fd;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    position: absolute;
+    margin-left: 36.3rem;
+  }
