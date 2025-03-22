@@ -211,6 +211,12 @@
     font-family: "Playfair Display", serif;
 }
 
+/* Third */
+#third iframe{
+    width: 115rem;
+    margin: 15rem 10rem;
+}
+
 /* Fourth */
 #fourth .images{
     width: 100%;
