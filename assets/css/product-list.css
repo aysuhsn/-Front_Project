@@ -393,3 +393,47 @@
     background-color: rgb(57, 134, 235);
     color: white;
 }
+
+/* Third */
+#third{
+    height: 50rem;
+}
+.mouse{
+    height: 100%;
+    background-color: #B08EAD;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mouse .mouse-content{
+    display: flex;
+    gap: 20rem;
+    justify-content: center;
+    align-items: center;
+}
+.mouse .mouse-content .center{
+    width: 60rem;
+    display: flex;
+    gap: 3rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mouse-content i{
+    color: white;
+    margin-bottom: 10rem;
+    
+}
+
+.mouse-content .center p{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: white;
+}
+.mouse-content .center h6{
+    font-size: 1.6rem;
+    color: white;
+}
