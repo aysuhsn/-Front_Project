@@ -1,0 +1,395 @@
+/* Header Start */
+#nav-area{
+    height: 9rem;
+    /* max-width: 1530px; */
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    position: fixed;
+}
+.nav-list ul{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.latest{
+    position: relative;
+    display: flex;
+}
+.hot{
+    position: absolute;
+    top: -17px;
+    right: -20px;
+    background: #FF003C;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.nav-list ul li a{
+    color: black;
+}
+.nav-list ul li a:hover{
+    color: #FF003C;
+    background-color: white;
+}
+/* DROPDOWN MENU START*/
+.nav-list li {
+    position: relative;
+}
+
+.nav-list .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1000;
+    padding-top: 5px; /* Daha stabil açılması üçün */
+}
+
+.nav-list a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+}
+
+.nav-list .dropdown:hover .dropdown-menu {
+    display: block;
+    border-top: 0.5rem solid #ff003c;
+}
+
+.dropdown-menu li {
+    white-space: nowrap;
+}
+
+.dropdown-menu a {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+.nav-list li a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* DROPDOWN MENU FINISH */
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+
+.search{
+    position: relative;
+    display: flex;
+}
+.search input{
+    width: 15rem;
+    padding: 1rem;
+    padding-right: 3.5rem;
+    border: 1px solid #494545;
+    border-radius: 2rem;
+}
+.search i{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    color: gray;
+    cursor: pointer;
+}
+
+.favory,
+.shop{
+    display: flex;
+    position: relative;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(189, 185, 185);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #00B1FF;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #00B1FF;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    top: -5px;
+    right: -10px;
+}
+
+.btn{
+    width: 9rem;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #2577FD;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00B1FF;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+.burger button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Header Finish */
+
+/* Main Start Section first */
+#first{
+    height: 30rem;
+}
+#first .products{
+    height: 100%;
+}
+#first .products h1{
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/hero/category.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 13rem 0;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+/* Section second */
+#second{
+    padding: 20rem 0;
+}
+#second .hero{
+    display: flex;
+    justify-content: space-around;
+}
+.hero .left{
+    padding-left: 10rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 6rem;
+}
+
+/* DROPDOWN START */
+.search{
+    height: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.search input{
+    height: 100%;
+    width: 30rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid #F4EDF2;
+    background-color: #F4EDF2;
+    border-radius: 3rem;
+}
+
+.search i{
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    color: rgb(97, 97, 97);
+    height: 8rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    cursor: pointer;
+}
+.category .dropdown {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 5rem;
+}
+ .category .dropdown-toggle {
+    width: 30rem;
+    height: 100%;
+    padding: 2rem;
+    background: #F4EDF2;
+    border: 1px solid #F4EDF2;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 3rem;
+    color: gray;
+    font-size: 1.5rem;
+}
+.category .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background: #f1e7f5;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.category .dropdown-menu li {
+    color: gray;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.category .dropdown-menu li:hover {
+    background: #d4c3db;
+}
+.category .dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* TYPE */
+.type .dropdown {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 5rem;
+}
+ .type .dropdown-toggle {
+    width: 30rem;
+    height: 100%;
+    padding: 2rem;
+    background: #F4EDF2;
+    border: 1px solid #F4EDF2;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 3rem;
+    color: gray;
+    font-size: 1.5rem;
+}
+.type .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background: #f1e7f5;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.type .dropdown-menu li {
+    color: gray;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.type .dropdown-menu li:hover {
+    background: #d4c3db;
+}
+.type .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* RIGHT */
+.hero .right{
+    width: 80rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.right .card{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.right .card .card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.right .card .card-content a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    width: 37rem;
+    color: rgb(46, 46, 46);
+    line-height: 3.5rem;
+}
+.right .card .card-content a:hover{
+    color: rgb(36, 98, 233);
+}
+.right .card .card-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: rgb(99, 99, 99);
+}
+.right .load{
+    border: 1px solid rgb(57, 134, 235);
+    margin-left: 6rem;
+    width: 15rem;
+    height: 6rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 134, 235);
+}
+.right .load:hover{
+    background-color: rgb(57, 134, 235);
+    color: white;
+}
