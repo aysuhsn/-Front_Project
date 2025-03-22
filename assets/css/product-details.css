@@ -212,3 +212,87 @@
 }
 
 /* Second */
+#second .pillow{
+    margin: 20rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.pillow .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.pillow .bottom h3{
+    font-size: 4rem;
+    font-family: "Playfair Display", serif;
+    color: #0B1C39;
+    width: 50rem;
+    text-align: center;
+}
+.pillow .bottom p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: #707070;
+    width: 80rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+.quantity-container label{
+    font-size: 1.6rem;
+    color: #707070;
+}
+.quantity-selector {
+    display: flex;
+    border: 1px solid #828BB2;
+    overflow: hidden;
+}
+
+.quantity-selector button {
+    background-color: white;
+    border: none;
+    color: #707070;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+}
+
+.quantity-selector input {
+    width: 4rem;
+    text-align: center;
+    border: none;
+    background-color: #828BB2;
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+.price {
+    font-size: 1.6rem;
+    color: #707070;
+}
+
+.pillow a{
+    color: #2577FD;
+    width: 16rem;
+    height: 6rem;
+    border: 1px solid #2577FD;
+    text-align: center;
+    padding: 2.2rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+.pillow a:hover{
+    color: white;
+    background-color: #2577FD;
+}
