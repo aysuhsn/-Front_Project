@@ -210,3 +210,12 @@
     font-weight: 700;
     font-family: "Playfair Display", serif;
 }
+
+/* Fourth */
+#fourth .images{
+    width: 100%;
+    display: flex;
+    margin-left: 5rem;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+}
