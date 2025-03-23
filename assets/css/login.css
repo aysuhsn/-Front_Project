@@ -1,0 +1,212 @@
+/* Header Start */
+#nav-area{
+    height: 9rem;
+    /* max-width: 1530px; */
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    position: fixed;
+}
+.nav-list ul{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.latest{
+    position: relative;
+    display: flex;
+}
+.hot{
+    position: absolute;
+    top: -17px;
+    right: -20px;
+    background: #FF003C;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.nav-list ul li a{
+    color: black;
+}
+.nav-list ul li a:hover{
+    color: #FF003C;
+    background-color: white;
+}
+/* DROPDOWN MENU START*/
+.nav-list li {
+    position: relative;
+}
+
+.nav-list .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1000;
+    padding-top: 5px; /* Daha stabil açılması üçün */
+}
+
+.nav-list a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+}
+
+.nav-list .dropdown:hover .dropdown-menu {
+    display: block;
+    border-top: 0.5rem solid #ff003c;
+}
+
+.dropdown-menu li {
+    white-space: nowrap;
+}
+
+.dropdown-menu a {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+.nav-list li a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* DROPDOWN MENU FINISH */
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+
+.search{
+    position: relative;
+    display: flex;
+}
+.search input{
+    width: 15rem;
+    padding: 1rem;
+    padding-right: 3.5rem;
+    border: 1px solid #494545;
+    border-radius: 2rem;
+}
+.search i{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    color: gray;
+    cursor: pointer;
+}
+
+.favory,
+.shop{
+    display: flex;
+    position: relative;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(189, 185, 185);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #00B1FF;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #00B1FF;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    top: -5px;
+    right: -10px;
+}
+
+.btn{
+    width: 9rem;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #2577FD;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00B1FF;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+.burger button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Header Finish */
+
+/* Main Start */
+#first{
+    height: 30rem;
+}
+#first .products{
+    height: 100%;
+}
+#first .products h1{
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/hero/category.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 13rem 0;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
