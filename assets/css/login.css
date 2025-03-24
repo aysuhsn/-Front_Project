@@ -192,7 +192,7 @@
 }
 /* Header Finish */
 
-/* Main Start */
+/* Main Start Section first*/
 #first{
     height: 30rem;
 }
@@ -209,4 +209,136 @@
     font-size: 5rem;
     font-weight: 700;
     font-family: "Playfair Display", serif;
+}
+
+/* Second */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f8f8;
+} */
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20rem 0;
+    margin-left: 13rem;
+}
+
+.left-section {
+    width: 50%;
+    background: linear-gradient(to left, #6E506B, #AF8DAC);
+    color: white;
+    padding: 4rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.left-section h2{
+    font-size: 2.4rem;
+    font-family: "Playfair Display", serif;
+}
+.left-section p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.left-section .btn{
+    width: 22rem;
+    height: 6rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+}
+.btn:hover {
+    background: white;
+    color: rgb(61, 120, 228);
+}
+
+.right-section {
+    width: 50%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+}
+.right-section h3{
+    font-size: 2.6rem;
+    font-family: "Playfair Display", serif;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #dddddd;
+}
+
+.remember-me {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+.remember-me input{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #dddddd;
+    cursor: pointer;
+}
+.remember-me label{
+    font-size: 1.1rem;
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+.right-section .btn{
+    width: 100%;
+    height: 6rem;
+    border: 1px solid #2577fd;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    color: #2577fd;
+}
+.right-section .btn:hover{
+    background-color: #2577fd;
+    color: white;
+}
+.forgot {
+    display: block;
+    text-align: right;
+    margin-top: 1rem;
+    color: gray;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+    .btn {
+        width: 100%;
+    }
 }
