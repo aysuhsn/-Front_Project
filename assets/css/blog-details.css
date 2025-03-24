@@ -192,9 +192,10 @@
 }
 /* Header Finish */
 
-/* Main Start Section first*/
+/* Main Start Section first */
 #first{
     height: 30rem;
+    margin: 0 0 13rem 0;
 }
 #first .products{
     height: 100%;
@@ -210,81 +211,41 @@
     font-weight: 700;
     font-family: "Playfair Display", serif;
 }
-
-/* Second LEFT*/
+/* Second */
 #second{
-    height: 117rem;
+    height: 80rem;
 }
 #second .hero{
-    display: flex;
     gap: 3rem;
+    display: flex;
     height: 100%;
-    margin: 13rem 10rem;
+    margin: 0 10rem 13rem 10rem;
 }
-.hero .left{
+#second .hero-left{
     width: 75rem;
-}
-.hero .left .left-area{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-/* ARTICLE */
-.left-area .card{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-/* card top */
-.card .card-top{
-    position: relative;
-}
-.card-top .blog-item{
-    position: absolute;
-    border: 1px solid #FF003C;
-    width: 9rem;
-    height: 9rem;
-    background-color: #FF003C;
-    text-align: center;
-    border-radius: 0.5rem;
-    left: 5rem;
-    top: 30.5rem;
-    padding: 1rem;
-}
-.blog-item h3{
-    font-family: "Playfair Display", serif;
-    font-size: 2.5rem;
-    color: white;
-}
-.blog-item p{
-    font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
-    color: white;
-}
-/* card bottom */
-.card-bottom{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 75rem;
-    box-shadow: rgba(221, 221, 221, 0.3) 0 2rem 2rem 0;
 }
-.card-bottom a h2{
+.left-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.left-content .travel{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hero .hero-left .left-content .travel h2{
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
-    color: #0B1C39;
 }
-.card-bottom p{
-    font-family: "Poppins", sans-serif;
-    width: 75rem;
-    font-size: 1.6rem;
-    color: #506172;
-}
-.card-bottom ul{
+.hero .hero-left .left-content .travel ul{
     display: flex;
     gap: 1rem;
 }
-.card-bottom ul li{
+.hero .hero-left .left-content .travel ul li{
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -292,24 +253,234 @@
     font-size: 1.4rem;
     cursor: pointer;
 }
-.card-bottom ul li:hover{
+.hero .hero-left .left-content .travel ul li:hover{
     color: #FF003C;
 }
-.card-bottom ul li i{
+.hero .hero-left .left-content .travel ul li i{
     font-size: 1.3rem;
 }
-.card-bottom ul li:not(:last-child)::after {
+.hero .hero-left .left-content .travel ul li:not(:last-child)::after {
     content: " | "; 
     color: black; 
   }
+.left-content .text1, .text2, .text3, .text4{
+    font-size: 1.5rem;
+    color: #506172;
+    font-family: "Poppins", sans-serif;
+}
 
-  /* Second RIGHT */
-.right{
+.quote-wrapper{
+    padding: 3rem;
+    height: 20rem;
+    background: rgba(130, 139, 178, 0.1);
+}
+.quote{
+    background: white;
+    font-size: 1.6rem;
+    color: #999999;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    padding: 2rem;
+    border-left: 2px solid #888888;
+}
+.text4{
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 2rem;
+}
+
+.people{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.post1, .post2{
+    display: flex;
+    justify-content: space-between;
+}
+.post-left1 p span{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.post-left1 p span i{
+    font-size: 1.8rem;
+    color: #506172;
+}
+.post-left1 p span{
+    color: #60707F;
+    font-size: 1.4rem;
+}
+.post-right1{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+    color: #999999;
+}
+.post-left2, .post-right2{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.post-left2 p, .post-right2 p{
+    font-size: 1.4rem;
+    color: #506172;
+}
+.post-left2 a h4, .post-right2 a h4{
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    color: #0B1C39;
+}
+.post2{
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 2rem;
+}
+
+.harvard{
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 3rem;
+}
+.harvard .harvard-text{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    background: rgb(251, 249, 255);
+    padding: 4rem 3rem;
+}
+.harvard .harvard-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.harvard a h4{
+    font-size: 1.6rem;
+    font-family: "Playfair Display", serif;
+    color: #0B1C39;
+}
+.harvard p{
+    font-size: 1.5rem;
+    color: #506172;
+    font-family: "Poppins", sans-serif;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 3rem;
+}
+.comment h4{
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    color: #0B1C39;
+    padding-bottom: 3rem;
+}
+.comment .comment-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.comment .comment-content .person{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.comment .comment-content .person p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    color: #777777;
+}
+.person-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.person-bottom1 p{
+    padding-left: 13rem;
+    color: #999999;
+}
+.person-bottom2 a{
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    color: #888888;
+}
+.person-bottom2 a:hover{
+    color: #FF003C;
+}
+
+.leave{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+}
+.leave h4{
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    color: #0B1C39;
+}
+.leave textarea{
+    width: 75rem;
+    height: 20rem;
+    color: gray;
+    font-size: 1.5rem;
+    padding: 1rem;
+    resize: vertical;
+    outline: none;
+}
+.leave textarea:focus::placeholder{
+    color: transparent;
+}
+.leave .email{
+    display: flex;
+    gap: 3rem;
+}
+.email input{
+    width: 36rem;
+    height: 5rem;
+    outline: none;
+    padding: 1rem;
+}
+.email input:focus::placeholder{
+    color: transparent;
+}
+.leave .subject{
+    height: 5rem;
+    padding: 1rem;
+    outline: none;
+}
+.leave .subject:focus::placeholder{
+    color: transparent;
+}
+.leave a{
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 0.3rem;
+    padding-left: 2.3rem;
+    padding-top: 1.3rem;
+    border: 1px solid #0072f5;
+    background-color: #0072f5;
+    width: 18rem;
+    height: 4.5rem;
+}
+.leave a:hover{
+    border-color: #FF003C;
+    background-color: transparent;
+    color: black;
+}
+
+
+/* Second RIGHT */
+.hero-right{
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
-.right .search{
+.hero-right .search{
     width: 35rem;
     background-color: rgb(251, 249, 255);
     position: relative;
@@ -317,7 +488,7 @@
     flex-direction: column;
     gap: 3rem;
 }
-.right .search form{
+.hero-right .search form{
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -357,7 +528,7 @@
     color: black;
 }
 /* ASIDE-2 */
-.right .category{
+.hero-right .category{
     width: 35rem;
     height: 85rem;
     display: flex;
@@ -389,7 +560,7 @@
 }
 
 /* ASIDE-3 */
-.right .post{
+.hero-right .post{
     width: 35rem;
     height: 85rem;
     display: flex;
@@ -398,7 +569,7 @@
     padding: 3rem 2rem 5rem 2rem;
     background-color: rgb(251, 249, 255);
 }
-.right .post h4{
+.hero-right .post h4{
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     border-bottom: 1px solid rgb(240, 233, 255);
@@ -426,7 +597,7 @@
 }
 
 /* ASIDE-4 */
-.right .tag{
+.hero-right .tag{
     width: 35rem;
     height: 85rem;
     display: flex;
@@ -435,7 +606,7 @@
     padding: 3rem 2rem 5rem 2rem;
     background-color: rgb(251, 249, 255);
 }
-.right .tag h4{
+.hero-right .tag h4{
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     border-bottom: 1px solid rgb(240, 233, 255);
@@ -463,7 +634,7 @@
 }
 
 /* ASIDE-5 */
-.right .instagram{
+.hero-right .instagram{
     width: 35rem;
     height: 85rem;
     display: flex;
@@ -472,7 +643,7 @@
     padding: 3rem 2rem 5rem 2rem;
     background-color: rgb(251, 249, 255);
 }
-.right .instagram h4{
+.hero-right .instagram h4{
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     border-bottom: 1px solid rgb(240, 233, 255);
@@ -485,7 +656,7 @@
 }
 
 /* Aside-6 */
-.right .newsletter{
+.hero-right .newsletter{
     width: 35rem;
     height: 85rem;
     display: flex;
@@ -494,7 +665,7 @@
     padding: 3rem 2rem 5rem 2rem;
     background-color: rgb(251, 249, 255);
 }
-.right .newsletter h4{
+.hero-right .newsletter h4{
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     border-bottom: 1px solid rgb(240, 233, 255);
@@ -527,78 +698,4 @@
     background-color: transparent;
     border: 1px solid #FF003C;
     color: black;
-}
-
-
-/*FOOTER TOP */
-footer{
-    margin-top: 190rem;
-}
-#estore .footer{
-    display: flex;
-    flex-direction: column;
-}
-#estore .support{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15rem;
-    font-family: 'Poppins', sans-serif;
-}
-.support .link{
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-.support .link img{
-    width: 10.2rem;
-    height: 2.3rem;
-}
-.link p{
-    font-size: 1.6rem;
-    width: 20rem;
-    line-height: 1.8;
-    color: rgb(134, 140, 152);
-}
-.link h4{
-    font-size: 2rem;
-}
-.link ul{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-.link li a{
-    font-size: 1.6rem;
-    color: rgb(134, 140, 152);
-}
-.link li a:hover{
-    color: rgb(34, 34, 248);
-}
-/* FOOTER BOTTOM */
-.end{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 35rem;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-.end .left{
-    font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(134, 140, 152);
-}
-.end .left p i{
-    color: #0000EE;
-}
-.end .right{
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    font-size: 1.5rem;
-    color: #222222;
-    cursor: pointer;
-}
-.end .right i:hover{
-    color: #0000EE;
 }
