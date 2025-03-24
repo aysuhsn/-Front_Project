@@ -1,0 +1,526 @@
+/* Header Start */
+#nav-area{
+    height: 9rem;
+    /* max-width: 1530px; */
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    position: fixed;
+}
+.nav-list ul{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.latest{
+    position: relative;
+    display: flex;
+}
+.hot{
+    position: absolute;
+    top: -17px;
+    right: -20px;
+    background: #FF003C;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.nav-list ul li a{
+    color: black;
+}
+.nav-list ul li a:hover{
+    color: #FF003C;
+    background-color: white;
+}
+/* DROPDOWN MENU START*/
+.nav-list li {
+    position: relative;
+}
+
+.nav-list .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1000;
+    padding-top: 5px; /* Daha stabil açılması üçün */
+}
+
+.nav-list a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+}
+
+.nav-list .dropdown:hover .dropdown-menu {
+    display: block;
+    border-top: 0.5rem solid #ff003c;
+}
+
+.dropdown-menu li {
+    white-space: nowrap;
+}
+
+.dropdown-menu a {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+.nav-list li a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* DROPDOWN MENU FINISH */
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+
+.search{
+    position: relative;
+    display: flex;
+}
+.search input{
+    width: 15rem;
+    padding: 1rem;
+    padding-right: 3.5rem;
+    border: 1px solid #494545;
+    border-radius: 2rem;
+}
+.search i{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    color: gray;
+    cursor: pointer;
+}
+
+.favory,
+.shop{
+    display: flex;
+    position: relative;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(189, 185, 185);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #00B1FF;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #00B1FF;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    top: -5px;
+    right: -10px;
+}
+
+.btn{
+    width: 9rem;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #2577FD;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00B1FF;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+.burger button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Header Finish */
+
+/* Main Start Section first*/
+#first{
+    height: 30rem;
+}
+#first .products{
+    height: 100%;
+}
+#first .products h1{
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/hero/category.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 13rem 0;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+/* Second LEFT*/
+#second{
+    height: 117rem;
+}
+#second .hero{
+    display: flex;
+    gap: 3rem;
+    height: 100%;
+    margin: 13rem 10rem;
+}
+.hero .left{
+    width: 75rem;
+}
+.hero .left .left-area{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+/* ARTICLE */
+.left-area .card{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+/* card top */
+.card .card-top{
+    position: relative;
+}
+.card-top .blog-item{
+    position: absolute;
+    border: 1px solid #FF003C;
+    width: 9rem;
+    height: 9rem;
+    background-color: #FF003C;
+    text-align: center;
+    border-radius: 0.5rem;
+    right: 103rem;
+    top: 30.5rem;
+    padding: 1rem;
+}
+.blog-item h3{
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: white;
+}
+.blog-item p{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+/* card bottom */
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 75rem;
+    box-shadow: rgba(221, 221, 221, 0.3) 0 2rem 2rem 0;
+}
+.card-bottom a h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    color: #0B1C39;
+}
+.card-bottom p{
+    font-family: "Poppins", sans-serif;
+    width: 75rem;
+    font-size: 1.6rem;
+    color: #506172;
+}
+.card-bottom ul{
+    display: flex;
+    gap: 1rem;
+}
+.card-bottom ul li{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: #999999;
+    font-size: 1.4rem;
+}
+.card-bottom ul li i{
+    font-size: 1.3rem;
+}
+.card-bottom ul li:not(:last-child)::after {
+    content: " | "; 
+    color: black; 
+  }
+
+  /* Second RIGHT */
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.right .search{
+    width: 35rem;
+    background-color: rgb(251, 249, 255);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.right .search form{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.search .keyword input{
+    width: 25rem;
+    height: 5rem;
+    border-radius: 0;
+    border: 1px solid rgb(187, 187, 187);
+}
+.search .keyword .icon{
+    position: absolute;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #2577FD;
+    bottom: 10.1rem;
+    left: 23.1rem;
+}
+.search .keyword .icon i{
+    color: white;
+    font-size: 2rem;
+}
+
+.search form button{
+    width: 25rem;
+    height: 5rem;
+    border: 1px solid #FDCB9E;
+    background-color: #2577FD;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+}
+.search form button:hover{
+    background-color: transparent;
+    border: 1px solid #FF003C;
+    color: black;
+}
+/* ASIDE-2 */
+.right .category{
+    width: 35rem;
+    height: 85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem 5rem 2rem;
+    background-color: rgb(251, 249, 255);
+}
+.category h4{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(240, 233, 255);
+    padding-bottom: 1rem;
+}
+.category ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.category li{
+    border-bottom: 1px solid rgb(240, 233, 255);
+    font-size: 1.6rem;
+}
+.category li a p{
+    color: #506172;
+}
+.category li a p:hover{
+    color: #FF003C;
+}
+
+/* ASIDE-3 */
+.right .post{
+    width: 35rem;
+    height: 85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem 5rem 2rem;
+    background-color: rgb(251, 249, 255);
+}
+.right .post h4{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(240, 233, 255);
+    padding-bottom: 1rem;
+}
+.post .image{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.post .image .img-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.post .image .img-text a h3{
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    color: #0B1C39;
+}
+.post .image .img-text p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    color: #506172;
+}
+
+/* ASIDE-4 */
+.right .tag{
+    width: 35rem;
+    height: 85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem 5rem 2rem;
+    background-color: rgb(251, 249, 255);
+}
+.right .tag h4{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(240, 233, 255);
+    padding-bottom: 1rem;
+}
+.tag ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.tag ul li a{
+    display: inline-block;
+    border: 1px solid rgb(238, 238, 238);
+    background: rgb(255, 255, 255);
+    padding: 4px 20px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    transition: 0.3s;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+}
+.tag ul li a:hover{
+    background-color: #FF003C;
+    color: white;
+}
+
+/* ASIDE-5 */
+.right .instagram{
+    width: 35rem;
+    height: 85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem 5rem 2rem;
+    background-color: rgb(251, 249, 255);
+}
+.right .instagram h4{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(240, 233, 255);
+    padding-bottom: 1rem;
+}
+.instagram ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Aside-6 */
+.right .newsletter{
+    width: 35rem;
+    height: 85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem 5rem 2rem;
+    background-color: rgb(251, 249, 255);
+}
+.right .newsletter h4{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(240, 233, 255);
+    padding-bottom: 1rem;
+}
+.newsletter form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter .email input{
+    width: 25rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 1px solid rgb(240, 233, 255);
+}
+.newsletter form button{
+    width: 25rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 1px solid #FDCB9E;
+    background-color: #2577FD;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+}
+.newsletter form button:hover{
+    background-color: transparent;
+    border: 1px solid #FF003C;
+    color: black;
+}
