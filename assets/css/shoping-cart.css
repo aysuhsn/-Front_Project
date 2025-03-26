@@ -1,0 +1,455 @@
+/* Header Start */
+#nav-area{
+    height: 9rem;
+    /* max-width: 1530px; */
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    position: fixed;
+}
+.nav-list ul{
+    display: flex;
+    gap: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.latest{
+    position: relative;
+    display: flex;
+}
+.hot{
+    position: absolute;
+    top: -17px;
+    right: -20px;
+    background: #FF003C;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.nav-list ul li a{
+    color: black;
+}
+.nav-list ul li a:hover{
+    color: #FF003C;
+    background-color: white;
+}
+/* DROPDOWN MENU START*/
+.nav-list li {
+    position: relative;
+}
+
+.nav-list .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1000;
+    padding-top: 5px; /* Daha stabil açılması üçün */
+}
+
+.nav-list a {
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+}
+
+.nav-list .dropdown:hover .dropdown-menu {
+    display: block;
+    border-top: 0.5rem solid #ff003c;
+}
+
+.dropdown-menu li {
+    white-space: nowrap;
+}
+
+.dropdown-menu a {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+.nav-list li a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* DROPDOWN MENU FINISH */
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+
+.search{
+    position: relative;
+    display: flex;
+}
+.search input{
+    width: 15rem;
+    padding: 1rem;
+    padding-right: 3.5rem;
+    border: 1px solid #494545;
+    border-radius: 2rem;
+}
+.search i{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    color: gray;
+    cursor: pointer;
+}
+
+.favory,
+.shop{
+    display: flex;
+    position: relative;
+    color: rgb(59, 59, 59);
+    border: 1px solid rgb(189, 185, 185);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid #00B1FF;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #00B1FF;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    top: -5px;
+    right: -10px;
+}
+
+.btn{
+    width: 9rem;
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #2577FD;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00B1FF;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+.burger button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 4rem;
+    width: 8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/* Header Finish */
+
+/* Main Start */
+#first{
+    height: 30rem;
+    margin-bottom: 20rem;
+}
+#first .products{
+    height: 100%;
+}
+#first .products h1{
+    background-image: url(https://preview.colorlib.com/theme/estore/assets/img/hero/category.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 13rem 0;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+
+/* Second */
+
+.cart-inner {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: #506172;
+}
+.table td h5{
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    color: #415094;
+}
+.table th{
+    color: #828282;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+.table td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+/* .table tbody .buttons .cupon{
+    padding-right: 30rem;
+}
+.table tbody .buttons td{
+    padding: 1.5rem;
+} */
+
+.media {
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    width: 15rem;
+    height: 15.5rem;
+    margin-right: 1.5rem;
+    border: 1px solid #eeeeee;
+}
+
+.quantity {
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+}
+
+.quantity input {
+    width: 6rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.quantity .button{
+    display: flex;
+    flex-direction: column;
+}
+.button button {
+    border: 1px solid #767676;
+    background-color: transparent;
+    color: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.button button:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+
+.update{
+    border-bottom: 1px solid #ddd;
+    padding: 1.5rem 4rem 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+.update a{
+    width: 20rem;
+    height: 5.8rem;
+    color: white;
+    background-color: #2577FD;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.update a:hover{
+    border: 1px solid #2577FD;
+    background-color: transparent;
+    color: #2577FD;
+}
+.subtotal{
+    border-bottom: 1px solid #ddd;
+    padding: 3rem 4rem 3rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10rem;
+}
+.subtotal h5{
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    color: #415094;
+}
+.box {
+    margin-top: 3rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    text-align: right;
+    float: right;
+    border-bottom: 1px solid #ddd;
+}
+.box .box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+}
+.box-top h5{
+    margin-left: 76rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    color: #415094;
+}
+
+.box-top .radio ul li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: #828282;
+}
+.radio li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.radio h6{
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    color: #415094;
+}
+.box-bottom{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    gap: 1rem;
+}
+.box-bottom .tst{
+    background-color: #F7F7F7;
+    border: none;
+}
+.box-bottom input{
+    background-color: #F7F7F7;
+    border: none;
+    outline: none;
+}
+.box-bottom a{
+    width: 20rem;
+    height: 5.6rem;
+    color: white;
+    background-color: #2577FD;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.6rem;
+    margin-left: 11rem;
+}
+.box-bottom a:hover{
+    border: 1px solid #2577FD;
+    background-color: transparent;
+    color: #2577FD;
+}
+.box-bottom select{
+    width: 30.6rem;
+    height: 4rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+.box-bottom input {
+    width: 30.6rem;
+    height: 4rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+.box-bottom .tst option{
+    color: #828282;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.checkout {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    float: right;
+}
+
+.checkout a {
+    width: 24.7rem;
+    height: 5.8rem;
+    color: white;
+    background-color: #2577FD;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.checkout a:hover {
+    background-color: transparent;
+    color: #2577FD;
+    border: 1px solid #2577FD;
+}

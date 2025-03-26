@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/shoping-cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shoping Cart</title>
+</head>
+<body>
+    <header>
+        <section id="nav-area">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="https://preview.colorlib.com/theme/estore/assets/img/logo/logo.png" alt="">
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="latest">Latest <span class="hot">Hot</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-list.html">Product List</a></li>
+                                <li><a href="product-deatils.html">Product Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                                <li><a href="#">Card</a></li>
+                                <li><a href="#">Element</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Confirmation</a></li>
+                                <li><a href="#">Shopping Cart</a></li>
+                                <li><a href="#">Product Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav">
+                    <div class="search">
+                        <input type="text" placeholder="Search products">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                    </div>
+                    <div class="favory">
+                        <i class="fa-regular fa-heart fa-2xl"></i>
+                        <span class="badge">02</span>
+                    </div>
+                    <div class="shop">
+                        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                        <span class="badge">02</span>
+                    </div>
+                    <button class="btn">Sign in</button>
+                </div>
+                <div class="burger">
+                    <button>
+                        <span>Menyu</span>
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Start -->
+     <main>
+        <section id="first">
+            <div class="products">
+                <h1>Card List</h1>
+            </div>
+        </section>
+
+        <section id="second">
+            <div class="cart-inner">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="media">
+                                    <div class="image"><img src="https://preview.colorlib.com/theme/estore/assets/img/arrivel/arrivel_1.png" alt=""></div>
+                                    <div class="image-text"><p>Minimalistic shop for multipurpose use</p></div>
+                                </div>
+                            </td>
+                            <td><h5>$360.00</h5></td>
+                            <td class="quantity">
+                                <input type="text" min="1" max="100" value="1">
+                                <div class="button">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                            </td>
+                            <td><h5>$720.00</h5></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="media">
+                                    <div class="image"><img src="https://preview.colorlib.com/theme/estore/assets/img/arrivel/arrivel_2.png" alt=""></div>
+                                    <div class="image-text"><p>Minimalistic shop for multipurpose use</p></div>
+                                </div>
+                            </td>
+                            <td><h5>$360.00</h5></td>
+                            <td class="quantity">
+                                <input type="text" min="1" max="100" value="1">
+                                <div class="button">
+                                    <button>+</button>
+                                    <button>-</button>
+                                </div>
+                            </td>
+                            <td><h5>$720.00</h5></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="update">
+                    <a href="#">Update Cart</a>
+                    <a href="#">Close Coupon</a>
+                </div>
+
+                <div class="subtotal">
+                    <h5>Subtotal</h5>
+                    <h5>$2160.00</h5>
+                </div>
+
+                <div class="box">
+                    <div class="box-top">
+                        <h5>Shipping</h5>
+                    <div class="radio">
+                        <ul>
+                            <li>Flat Rate: $5  <input type="radio"></li>
+                            <li>Free Shipping  <input type="radio"></li>
+                            <li>Flat Rate: $10.00  <input type="radio"></li>
+                            <li>Local Delivery: $2.00  <input type="radio"></li>
+                        </ul>
+                        <h6>Calculate Shipping <i class="fa-solid fa-caret-down"></i></h6>
+                    </div>
+                    </div>
+
+                    <div class="box-bottom">
+                            <select class="tst" >
+                                <option selected value>Bangladesh</option>
+                                <option>India</option>
+                                <option>Pakistan</option>
+                            </select>
+
+                            <select class="tst" >
+                                <option selected value>Select a state</option>
+                                <option>Select a state</option>
+                                <option>Select a state</option>
+                            </select>
+
+                            <input type="text" placeholder="Postcode/Zipcode">
+                            <a href="#">Update Details</a>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <a href="#">Continue Shopping</a>
+                    <a href="#">Proceed to checkout</a>
+                </div>
+            </div>
+        </section>
+
+     </main>
+     <!-- Main Finish -->
+</body>
+</html>
